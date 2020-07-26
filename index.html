@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="fancy-color" style="text-align: center;font-family: cursive;">
+        CALCULATOR
+    </h1>
+    
+    <div id="calculator-container">
+        <div id="calculator">
+            <div id="display">
+                <input placeholder="Ready to use" >
+            </div>
+            <div class="keys-container">
+                <div class="level">
+                    <div class="key fancy-color"  onClick="clearall()" >
+                       C
+                    </div>
+
+                    <div class="key fancy-color" onClick="signShift()">
+                        +/-
+                        
+                    </div>
+
+                    <div class="key fancy-color" onClick="operator('%')">
+                        %
+                        
+                    </div>
+
+                    <div class="key fancy-color" onClick="operator('/')">
+                        /
+                    </div>
+
+   
+                </div>
+                <div class="level">
+                    <div class="key " onClick="addcont(7)">
+                        7
+                    </div>
+
+                    <div class="key" onClick="addcont(8)">
+                        8
+                    </div>
+
+                    <div class="key" onClick="addcont(9)">
+                        9
+                    </div>
+
+                    <div class="key fancy-color" onClick="operator('*')">
+                        *
+                    </div>
+                    
+   
+                </div>
+                <div class="level">
+                    <div class="key" onClick="addcont(4)">
+                       4
+                    </div>
+
+                    <div class="key" onClick="addcont(5)">
+                        5
+                    </div>
+
+                    <div class="key" onClick="addcont(6)">
+                        6
+                    </div>
+
+                    <div class="key fancy-color" onClick="operator('-')">
+                        -
+                    </div>
+                    
+   
+                </div>
+                <div class="level">
+                    <div class="key" onClick="addcont(1)">
+                        1 
+                    </div>
+
+                    <div class="key" onClick="addcont(2)">
+                        2
+                    </div>
+
+                    <div class="key" onClick="addcont(3)">
+                        3
+                    </div>
+
+                    <div class="key fancy-color" onClick="operator('+')">
+                        +
+                    </div>
+                    
+   
+                </div>
+                <div class="level">
+                    <div class="lastlevel-key1" onClick="addcont(0)">
+                           0 
+                    </div>
+
+                    <div class="key" onClick="decimal('.')">
+                        .
+                    </div>
+
+                    <div class="key fancy-color" onClick="result()">
+                        =
+                    </div>
+
+                    
+                    
+   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
